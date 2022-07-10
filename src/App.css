@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-text{
+  font-weight: bold;
+  color: rgb(119, 119, 244);
+  font-size: 40px;
+}
+
+.icon_class>.MuiSvgIcon-root{
+  color: rgb(119, 119, 244);
+}
+
+.signup-main{
+  margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 80px;
+}
+.createacc-btn{
+  margin-left: 35%;
+}
+
+.login-main{
+  margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.login-btn{
+  margin-left: 40%;
+}
+
+a.below-text {
+  text-align: center;
+}
+
+.first_last{
+  display: flex;
+  padding: 10px;
+  gap: 5px;
+}
+
+.email_pw{
+  display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divider{
+  margin-top: 5px;
+}
+
+.createpost_main {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 10px;
+  margin-top: 65px;
+}

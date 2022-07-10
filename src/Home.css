@@ -1,0 +1,35 @@
+.grid-container{
+    margin-top: 80px;
+    display: flex;
+    
+}
+
+.trending-main{
+    display: flex;
+    margin-bottom: 5px;
+    
+}
+
+.trending-title{
+    color: white;
+    height: 10%;
+}
+.allpost{
+    color: white;
+    height: 10%;
+    margin-left: 10px;
+}
+
+.MuiCardActions-root.MuiCardActions-spacing.css-1t6e9jv-MuiCardActions-root {
+    justify-content: space-between;
+}
+.cardItem1{
+    width:40%;
+   
+    
+}
+
+.home-card {
+    display: flex;
+    flex-direction: row;
+}
