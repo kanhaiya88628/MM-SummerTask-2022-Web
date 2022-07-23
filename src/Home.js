@@ -1,4 +1,5 @@
 import React, {useState,useEffect} from "react";
+
 import {
   Grid,
   Card,
@@ -7,15 +8,14 @@ import {
   CardContent,
   Typography,
   Container,
-  Link,
   CardActions,
   Button,
   IconButton,
   TextField,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ThumbDownIcon from "@mui/icons-material/ThumbDown";
-import VisibilityIcon from "@mui/icons-material/Visibility";
 import "./Home.css";
 import "./App.css";
 
@@ -72,14 +72,12 @@ const Home = () => {
     })
   }
 
-  
-
   return (
     <Container className="grid-container">
       <div className="trending-main">
         <Button
           variant="contained"
-          href="#"
+          component={Link} to="/trendingArticles"
           className="trending-title"
           sx={{ background: "black", display: "inline", padding: "4px" }}
         >
@@ -121,22 +119,17 @@ const Home = () => {
                 <Typography variant="OVERLINE TEXT">{item.likes}</Typography>
 
               </div>
-              <Button onClick={() => {eachPost(item.body)}}>Read More</Button>
-              <IconButton aria-label="total-views">
-                <VisibilityIcon />
-              </IconButton>
+              <Button component={Link} to="/eachpost" onClick={() => {eachPost(item._id)}}>Read more</Button>
+
+              <Typography variant="caption">{item.views} views</Typography>
+
             </CardActions>
           </Card>
         </Grid>
             )
           })
         }
-        
-      {/* <Grid container spacing={3} className="main-card"> */}
-        
-        
-        
-      {/* </Grid> */}
+      
       </div>
     </Container>
   );

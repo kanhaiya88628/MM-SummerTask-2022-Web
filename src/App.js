@@ -6,6 +6,8 @@ import Admin from "./Admin";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./Signup";
 import Log_in from "./Log_in";
+import Trending from "./Trending"
+import Eachpost from "./Eachpost"
 
 
 
@@ -19,6 +21,8 @@ const App = () => {
           <Route exact path="/Admin" element={<Admin />} />
           <Route exact path="/login" element={<Log_in />} />
           <Route exact path="/signup" element={<Signup />} />
+          <Route path="/trendingArticles" element={<Trending />} />
+          <Route path="/eachpost" element={<Eachpost />} />
           
         </Routes>
       </BrowserRouter>
